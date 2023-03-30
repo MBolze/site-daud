@@ -1,11 +1,101 @@
 @charset "UTF-8";
 
-/*
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&display=swap');
 
-font-family: 'Montserrat', sans-serif;
-*/
+
+:root {
+    --cor0: #ED1C24;
+    --cor1: #A6CE39;
+    --cor2: #3DB44A;
+    --cor3: #FFF200;
+    --cor4: #7C3F00; 
+    
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-oficial: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    min-height: 150px;
+    font-family: var(--fonte-oficial);
+    font-variant: small-caps;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+header > h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.664);
+}
+
+header > p {
+    font-family: var(--fonte-oficial);
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-variant: normal;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+nav {
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.212);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor5);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.507);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h1 {
+    color: #7C3F00;
+    font-family: var(--fonte-oficial);
+}
+
+main h2 {
+    font-family: var(--fonte-oficial);
+}
 
 body {
     background-color: #a6ce39a4;
+    font-family: var(--fonte-oficial);
+}
+
+footer {
+    background-color: #7C3F00;
+    color: white;
+    font-family: var(--fonte-padrao);
 }
