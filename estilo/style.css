@@ -40,13 +40,23 @@ header > h1 {
 header > p {
     font-family: var(--fonte-oficial);
     font-size: 1.2em;
-    color: white;
+    color: var(--cor3);
     max-width: 600px;
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
     font-variant: normal;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--fonte-oficial);
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
 }
 
 nav {
@@ -65,7 +75,7 @@ nav > a {
 
 nav > a:hover {
     background-color: var(--cor1);
-    color: var(--cor5);
+    color: var(--cor4);
 }
 
 main {
@@ -81,21 +91,65 @@ main {
 }
 
 main h1 {
-    color: #7C3F00;
+    color: var(--cor4);
     font-family: var(--fonte-oficial);
 }
 
 main h2 {
+    color: var(--cor4);
     font-family: var(--fonte-oficial);
+    text-shadow: 1px 1px 2px white;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
 }
 
-body {
-    background-color: #a6ce39a4;
-    font-family: var(--fonte-oficial);
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+main strong {
+    color: var(--cor2);
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
+    background-color: var(--cor1);
+    padding: 2px 5px;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor0);
+    font-weight: lighter;
+}
+
+ol {
+    list-style-position: inside;
+    columns: 2;
 }
 
 footer {
-    background-color: #7C3F00;
+    background-color: var(--cor4);
     color: white;
-    font-family: var(--fonte-padrao);
+    font-family: var(--fonte-oficial);
+    font-size: .8em;
+    text-align: center;
+    padding: 5px;
+}
+
+footer a {
+    color: var(--cor3);
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    font-weight: lighter;
 }
