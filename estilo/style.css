@@ -136,11 +136,14 @@ ol {
 
 footer {
     background-color: var(--cor4);
+    width: 100%;
     color: white;
     font-family: var(--fonte-oficial);
     font-size: .8em;
     text-align: center;
     padding: 5px;
+    position: fixed;
+    bottom: 0px;
 }
 
 footer a {
