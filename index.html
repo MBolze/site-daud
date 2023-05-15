@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diretoria de Auditoria - SES/SC</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" sizes="32x32" href="imagens/Flag favicon-32x32.png" type="image/png">
     <link rel="stylesheet" href="estilo/style.css">
     </head>
@@ -12,8 +13,9 @@
     <header>
         <h1>Diretoria de Auditoria - SES/SC</h1>
         <p>Utilidades para os servidores da DAUD, em um único lugar</p>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">&#xe5d2;</span>
     </header>
-    <nav>
+    <nav id="itens">
         <a href="index.html">Início</a>
         <a href="https://trello.com/b/s5SdpS40/daud" target="_blank" class="externo">Trello</a>
         <a href="produtividade.html">Produtividade (RPM)</a>
@@ -46,5 +48,14 @@
     <footer>
         <p>Site criado por <a href="paginas-extras/social.html" target="_blank">Maurício Bolze</a>, como prática do <a href="https://www.cursoemvideo.com/" target="_blank" class="externo">Curso em Video</a>.</p>
     </footer>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == "block") {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
