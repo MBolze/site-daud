@@ -5,10 +5,11 @@
 
 :root {
     --cor0: #ED1C24;
-    --cor1: #A6CE39;
-    --cor2: #3DB44A;
-    --cor3: #FFF200;
-    --cor4: #7C3F00; 
+    --cor1: #A1C84D;
+    --cor2: #5FB157;
+    --cor3: #FCEE21;
+    --cor4: #744214; 
+    --cor5: #231F20;
     
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-oficial: 'Montserrat', sans-serif;
@@ -152,13 +153,13 @@ ol {
 
 footer {
     background-color: var(--cor4);
-    width: 100%;
+    width: 100vw;
     color: white;
     font-family: var(--fonte-oficial);
-    font-size: .8em;
+    font-size: .7em;
     text-align: center;
+    position: static;
     padding: 5px;
-    position: fixed;
     bottom: 0px;
 }
 
