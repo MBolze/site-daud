@@ -58,7 +58,7 @@ a.externo::after {
     content: '\00A0\1F517';
 }
 
-span#burguer{
+span#burguer {
     background-color: var(--cor4);
     display: block;
     color: white;
@@ -84,7 +84,7 @@ nav > a {
     color: white;
     padding: 10px;
     display: block;
-    border-radius: 3px;
+    border-radius: 2px;
     text-decoration: none;
     transition-duration: 0.5s;
     border-top: 2px solid var(--cor1);
