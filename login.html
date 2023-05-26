@@ -4,35 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diretoria de Auditoria - SES/SC</title>
+    <title>Login</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" sizes="32x32" href="imagens/favicon-32x32.png" type="image/png">
-    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="shortcut icon" href="imagens/DAUD favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/login_style.css">
     <link rel="stylesheet" href="estilo/media-query.css">
     </head>
 <body onresize="mudouTamanho()">
-    <header>
-        <h1>Diretoria de Auditoria - SES/SC</h1>
-        <p>Utilidades para os auditores da DAUD, em um único lugar</p>
-        <span id="burguer" class="material-icons" onclick="clickMenu()">&#xe5d2;</span>
-    </header>
-    <nav id="itens">
-        <a href="index.html">Início</a>
-        <a href="https://trello.com/b/s5SdpS40/daud" target="_blank" class="externo">Trello</a>
-        <a href="produtividade.html">Produtividade (RPM)</a>
-        <a href="login.html">Área Restrita</a>
-        <a href="contatos.html">Contatos</a>
-    </nav>
     <main>
         <section id="login">
             <div id="imagem">
-                Foto
+                <!-- Aqui vai a imagem nas CSS -->
             </div>
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar a funcionalidades restritas aos auditores.</p>
-                <form action="login.php" method="post">
-                    
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                        <label for="ilogin">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="4" maxlength="8"> 
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html">
+                        Esqueci a senha <span class="material-icons">mail</span>
+                    </a>
                 </form>
             </div>
         </section>
