@@ -53,7 +53,7 @@ section#login {
 
 section#login > div#imagem {
     display: block;
-    background: var(--cor1) url(../imagens/brasao.png) no-repeat;
+    background: var(--cor1) url(../imagens/Brasao_web.png) no-repeat;
     background-size: cover;
     background-position: center;
     height: 200px;
